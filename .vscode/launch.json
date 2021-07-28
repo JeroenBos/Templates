@@ -2,21 +2,21 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Tests",
             "type": "node",
             "request": "launch",
-            "name": "Mocha",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "program": "${workspaceFolder}/node_modules/tsdx/dist/index.js",
             "args": [
-                "--timeout",
-                "999999",
-                "--colors",
-                "${workspaceFolder}/dist/test.js",
-                // "--fgrep",
-                // "*"
+                "test",
+                "-o",
+                "blah" // matches arg to 'describe', not to 'it'
             ],
-            "console": "internalConsole",
+            "console": "externalTerminal",
             "internalConsoleOptions": "neverOpen",
-            "sourceMaps": true
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
         }
     ]
 }
