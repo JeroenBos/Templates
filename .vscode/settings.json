@@ -6,5 +6,7 @@
     "files.exclude": {
         "**/node_modules/**": true,
         "**/dist/**": true,
+        "LICENSE": true,
+        "yarn.lock": true
     }
 }
