@@ -1,7 +1,7 @@
-debugger;
-
 import 'jsdom';
 import { sum } from '../src';
+
+debugger;
 
 describe('blah', () => {
   it('works', () => {
