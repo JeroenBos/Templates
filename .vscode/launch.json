@@ -10,7 +10,7 @@
                 "test",
                 "--silent=false",
                 "-o",
-                "blah" // matches arg to 'describe', not to 'it'
+                "blah" // matches file names, not 'describe' nor 'it'
             ],
             "resolveSourceMapLocations": [
                 "${workspaceFolder}/**",
