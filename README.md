@@ -1,118 +1,71 @@
-# Description
-This repository represents a TypeScript template, because it's really hard to get it to work.
-Although, admittedly now with TSDX it seems a lot easier.
+# jbsnorro-TODO README
 
-Search and replace "template" to start using this template.
+This is the README for your extension "jbsnorro-TODO". After writing up a brief description, we recommend including the following sections.
 
-When cloned, this should work:
-```bash
-yarn install && yarn build && yarn test
-```
+## Features
 
-After that, launching the debug configuration in VSCode should also just work, including hitting breakpoints in the source maps.
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-## Current setup
-Btw, currently I have these versions:
-- Windows 10 v20H2
-- yarn v1.22.10
-- node v14.16.0
+For example if there is an image subfolder under your extension project workspace:
 
+\!\[feature X\]\(images/feature-x.png\)
 
-# TSDX User Guide
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+## Requirements
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+## Extension Settings
 
-## Commands
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-TSDX scaffolds your new library inside `/src`.
+For example:
 
-To run TSDX, use:
+This extension contributes the following settings:
 
-```bash
-npm start # or yarn start
-```
+* `myExtension.enable`: Enable/disable this extension.
+* `myExtension.thing`: Set to `blah` to do something.
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
+## Known Issues
 
-To do a one-off build, use `npm run build` or `yarn build`.
+Calling out known issues can help limit users opening duplicate issues against your extension.
 
-To run tests, use `npm test` or `yarn test`.
+## Release Notes
 
-## Configuration
+Users appreciate release notes as you update your extension.
 
-Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adjust the respective fields in `package.json` accordingly.
+### 1.0.0
 
-### Jest
+Initial release of ...
 
-Jest tests are set up to run with `npm test` or `yarn test`.
+### 1.0.1
 
-#### Setup Files
+Fixed issue #.
 
-This is the folder structure we set up for you:
+### 1.1.0
 
-```txt
-/src
-  index.tsx       # EDIT THIS
-/test
-  blah.test.tsx   # EDIT THIS
-.gitignore
-package.json
-README.md         # EDIT THIS
-tsconfig.json
-```
+Added features X, Y, and Z.
 
-### Rollup
+---
 
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
+## Following extension guidelines
 
-### TypeScript
+Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
 
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
+* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Continuous Integration
+## Working with Markdown
 
-### GitHub Actions
+You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
-Two actions are added by default:
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
+* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
+* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
-- `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
+## For more information
 
-## Optimizations
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
-
-```js
-// ./types/index.d.ts
-declare var __DEV__: boolean;
-
-// inside your code...
-if (__DEV__) {
-  console.log('foo');
-}
-```
-
-You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
-
-## Module Formats
-
-CJS, ESModules, and UMD module formats are supported.
-
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
-
-## Named Exports
-
-Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
-
-## Including Styles
-
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
-
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
-
-## Publishing to NPM
-
-We recommend using [np](https://github.com/sindresorhus/np).
+**Enjoy!**
